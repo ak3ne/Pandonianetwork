@@ -1509,15 +1509,14 @@ select {
     min-height: 100vh;
     min-height: 100dvh;
     padding-top: 56px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background:
+      radial-gradient(circle at 50% 30%, #1e1a14 0%, #0a0808 50%, #000000 100%),
+      #000;
   }
 
   .hero-copy {
-    margin-top: 4vh;
+    margin-top: 3vh;
     width: 92vw;
-    flex-shrink: 0;
   }
 
   h1 {
@@ -1542,26 +1541,35 @@ select {
     font-size: 0.82rem;
   }
 
+  /* Globe sits behind everything, filling the hero from roughly mid-screen down */
   .hero-globe-wrap {
-    position: relative;
-    left: auto;
-    transform: none;
-    bottom: auto;
-    width: 110vw;
-    height: 110vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -15vw;
+    width: 150vw;
+    height: 150vw;
     min-width: 0;
     min-height: 0;
     max-width: none;
     max-height: none;
-    margin-top: -2vh;
-    flex-shrink: 0;
+    z-index: 1;
+  }
+
+  /* Strengthen the overlay so text stays readable over the globe */
+  .hero-overlay {
+    background:
+      linear-gradient(180deg,
+        rgba(0, 0, 0, 0.6) 0%,
+        rgba(0, 0, 0, 0.25) 35%,
+        rgba(0, 0, 0, 0.05) 55%,
+        rgba(0, 0, 0, 0) 70%
+      );
+    z-index: 2;
   }
 
   #globe-hint {
-    position: absolute;
-    top: 8vw;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 14vw;
     font-size: 0.68rem;
     max-width: 80vw;
     padding: 5px 10px;
@@ -1838,9 +1846,9 @@ select {
   }
 
   .hero-globe-wrap {
-    width: 120vw;
-    height: 120vw;
-    margin-top: -1vh;
+    bottom: -20vw;
+    width: 170vw;
+    height: 170vw;
   }
 
   .panel {
