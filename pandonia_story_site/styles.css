@@ -63,19 +63,19 @@ code {
   justify-self: start;
 }
 
-.topbar nav {
+.topbar .topbar-nav-desktop {
   display: flex;
   gap: 28px;
   justify-self: center;
 }
 
-.topbar nav a {
+.topbar .topbar-nav-desktop a {
   font-size: 1.05rem;
   text-decoration: none;
   opacity: 0.93;
 }
 
-.topbar nav a:hover {
+.topbar .topbar-nav-desktop a:hover {
   opacity: 1;
 }
 
@@ -96,7 +96,70 @@ code {
   background: #ffffff;
 }
 
-.cta-mobile { display: none; }
+/* Mobile nav overlay — lives OUTSIDE topbar to avoid fixed-positioning issues on iOS */
+.mobile-nav-overlay {
+  display: none; /* hidden on desktop */
+}
+
+@media (max-width: 860px) {
+  .mobile-nav-overlay {
+    display: flex; /* enable on mobile */
+    position: fixed;
+    inset: 0;
+    z-index: 19;
+    background: rgba(12, 10, 8, 0.97);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .mobile-nav-overlay.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.mobile-nav-links a {
+  font-size: 1.6rem;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  color: var(--ivory);
+  text-decoration: none;
+  padding: 14px 24px;
+  opacity: 0.9;
+  letter-spacing: 0.04em;
+  transition: opacity 0.2s, color 0.2s;
+}
+
+.mobile-nav-links a:hover,
+.mobile-nav-links a:active {
+  opacity: 1;
+  color: var(--accent);
+}
+
+.mobile-nav-cta {
+  margin-top: 18px;
+  color: #131313 !important;
+  background: #efede8;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 14px;
+  padding: 14px 32px !important;
+  font-weight: 600 !important;
+  font-size: 1.15rem !important;
+  font-family: "Space Grotesk", sans-serif !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.24);
+}
 
 .nav-toggle {
   display: none;
@@ -1415,64 +1478,17 @@ select {
     padding: 10px 16px;
   }
 
-  .nav-toggle {
-    display: flex;
-    justify-self: end;
+  .topbar-nav-desktop {
+    display: none !important;
   }
 
   .cta-desktop {
-    display: none;
+    display: none !important;
   }
 
-  .topbar nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 25;
-    background: rgba(12, 10, 8, 0.96);
-    backdrop-filter: blur(12px);
+  .nav-toggle {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.28s ease;
-  }
-
-  .topbar nav.open {
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-  .topbar nav a {
-    font-size: 1.4rem;
-    font-family: "Cormorant Garamond", serif;
-    padding: 14px 0;
-    opacity: 0.9;
-    letter-spacing: 0.04em;
-  }
-
-  .topbar nav a:hover {
-    opacity: 1;
-    color: var(--accent);
-  }
-
-  .topbar nav .cta-mobile {
-    display: inline-block;
-    margin-top: 12px;
-    color: #131313;
-    background: #efede8;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 12px;
-    padding: 12px 24px;
-    font-weight: 500;
-    font-size: 1.1rem;
-    font-family: "Space Grotesk", sans-serif;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.24);
+    justify-self: end;
   }
 }
 
@@ -1492,12 +1508,16 @@ select {
   .hero {
     min-height: 100vh;
     min-height: 100dvh;
-    padding-top: 60px;
+    padding-top: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .hero-copy {
-    margin-top: 8vh;
-    width: 94vw;
+    margin-top: 4vh;
+    width: 92vw;
+    flex-shrink: 0;
   }
 
   h1 {
@@ -1505,28 +1525,46 @@ select {
   }
 
   .hero-sub {
-    font-size: 0.88rem !important;
-    max-width: 90vw !important;
+    font-size: 0.84rem !important;
+    max-width: 88vw !important;
     padding: 0 4px;
   }
 
   .hero-stats {
-    gap: 14px 18px;
+    gap: 10px 16px;
+  }
+
+  .hero-stat .k {
+    font-size: 0.58rem;
+  }
+
+  .hero-stat .v {
+    font-size: 0.82rem;
   }
 
   .hero-globe-wrap {
-    width: 200vw;
-    height: 200vw;
-    bottom: -80vw;
-    min-width: 500px;
-    min-height: 500px;
+    position: relative;
+    left: auto;
+    transform: none;
+    bottom: auto;
+    width: 110vw;
+    height: 110vw;
+    min-width: 0;
+    min-height: 0;
+    max-width: none;
+    max-height: none;
+    margin-top: -2vh;
+    flex-shrink: 0;
   }
 
   #globe-hint {
-    top: 15vh;
-    font-size: 0.72rem;
-    max-width: 85vw;
-    padding: 6px 10px;
+    position: absolute;
+    top: 8vw;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.68rem;
+    max-width: 80vw;
+    padding: 5px 10px;
   }
 
   .panel-head h2 {
@@ -1782,7 +1820,7 @@ select {
   }
 
   .hero-copy {
-    margin-top: 6vh;
+    margin-top: 3vh;
   }
 
   .hero-sub {
@@ -1800,11 +1838,9 @@ select {
   }
 
   .hero-globe-wrap {
-    width: 240vw;
-    height: 240vw;
-    bottom: -100vw;
-    min-width: 380px;
-    min-height: 380px;
+    width: 120vw;
+    height: 120vw;
+    margin-top: -1vh;
   }
 
   .panel {
@@ -1870,7 +1906,7 @@ select {
     padding: 8px 12px;
   }
 
-  .topbar nav a {
+  .mobile-nav-links a {
     min-height: 44px;
     display: flex;
     align-items: center;

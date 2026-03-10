@@ -15,13 +15,12 @@
 <body>
   <header class="topbar">
     <div class="brand">PN</div>
-    <nav id="main-nav">
+    <nav class="topbar-nav-desktop">
       <a href="#story">Story</a>
       <a href="#network">Data</a>
       <a href="#instrument">Instrument</a>
       <a href="#analysis">Interpret</a>
       <a href="#explorer">Explorer</a>
-      <a class="cta cta-mobile" href="#incident">L2 Analysis</a>
     </nav>
     <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
       <span class="nav-toggle-bar"></span>
@@ -30,6 +29,18 @@
     </button>
     <a class="cta cta-desktop" href="#incident">L2 Analysis</a>
   </header>
+
+  <!-- Mobile fullscreen nav overlay (outside topbar to avoid fixed-positioning issues) -->
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+    <nav class="mobile-nav-links">
+      <a href="#story">Story</a>
+      <a href="#network">Data</a>
+      <a href="#instrument">Instrument</a>
+      <a href="#analysis">Interpret</a>
+      <a href="#explorer">Explorer</a>
+      <a class="mobile-nav-cta" href="#incident">L2 Analysis</a>
+    </nav>
+  </div>
 
   <section class="hero" id="top">
     <div class="hero-overlay"></div>

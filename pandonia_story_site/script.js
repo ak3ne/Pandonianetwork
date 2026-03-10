@@ -1341,25 +1341,29 @@
   /* ── Mobile navigation toggle ── */
   (function initMobileNav() {
     const toggle = document.getElementById("nav-toggle");
-    const nav = document.getElementById("main-nav");
-    if (!toggle || !nav) return;
+    const overlay = document.getElementById("mobile-nav-overlay");
+    if (!toggle || !overlay) return;
 
     toggle.addEventListener("click", () => {
-      const open = nav.classList.toggle("open");
+      const open = overlay.classList.toggle("open");
       toggle.setAttribute("aria-expanded", String(open));
+      // Prevent body scroll when menu is open
+      document.body.style.overflow = open ? "hidden" : "";
     });
 
-    nav.querySelectorAll("a").forEach((link) => {
+    overlay.querySelectorAll("a").forEach((link) => {
       link.addEventListener("click", () => {
-        nav.classList.remove("open");
+        overlay.classList.remove("open");
         toggle.setAttribute("aria-expanded", "false");
+        document.body.style.overflow = "";
       });
     });
 
     document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape" && nav.classList.contains("open")) {
-        nav.classList.remove("open");
+      if (e.key === "Escape" && overlay.classList.contains("open")) {
+        overlay.classList.remove("open");
         toggle.setAttribute("aria-expanded", "false");
+        document.body.style.overflow = "";
       }
     });
   })();
