@@ -1505,6 +1505,23 @@ select {
     margin: 14px 0;
   }
 
+  /* Transparent topbar on mobile so globe shows through to the top edge */
+  .topbar {
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-bottom: none;
+    transition: background 0.3s ease, backdrop-filter 0.3s ease;
+  }
+
+  /* Restore dark bar once scrolled past the hero */
+  .topbar.scrolled {
+    background: rgba(0, 0, 0, 0.82);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
   .hero {
     min-height: 100vh;
     min-height: 100dvh;
@@ -1541,14 +1558,15 @@ select {
     font-size: 0.82rem;
   }
 
-  /* Globe sits behind everything, filling the hero from roughly mid-screen down */
+  /* Globe fills hero from the very top, touching the menu */
   .hero-globe-wrap {
     position: absolute;
+    top: -15vw;
+    bottom: auto;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -15vw;
-    width: 150vw;
-    height: 150vw;
+    width: 180vw;
+    height: 180vw;
     min-width: 0;
     min-height: 0;
     max-width: none;
@@ -1556,23 +1574,20 @@ select {
     z-index: 1;
   }
 
-  /* Strengthen the overlay so text stays readable over the globe */
+  /* Gentle overlay for text readability */
   .hero-overlay {
     background:
       linear-gradient(180deg,
-        rgba(0, 0, 0, 0.6) 0%,
-        rgba(0, 0, 0, 0.25) 35%,
-        rgba(0, 0, 0, 0.05) 55%,
-        rgba(0, 0, 0, 0) 70%
+        rgba(0, 0, 0, 0.35) 0%,
+        rgba(0, 0, 0, 0.1) 30%,
+        rgba(0, 0, 0, 0.0) 55%
       );
     z-index: 2;
   }
 
+  /* Hide globe hint on mobile — clutters the top */
   #globe-hint {
-    top: 14vw;
-    font-size: 0.68rem;
-    max-width: 80vw;
-    padding: 5px 10px;
+    display: none;
   }
 
   .panel-head h2 {
@@ -1846,9 +1861,9 @@ select {
   }
 
   .hero-globe-wrap {
-    bottom: -20vw;
-    width: 170vw;
-    height: 170vw;
+    top: -20vw;
+    width: 200vw;
+    height: 200vw;
   }
 
   .panel {

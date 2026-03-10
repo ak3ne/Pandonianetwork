@@ -1368,6 +1368,22 @@
     });
   })();
 
+  /* ── Scroll-aware topbar: transparent over hero, opaque over content ── */
+  (function initScrollTopbar() {
+    const topbar = document.querySelector(".topbar");
+    const hero = document.querySelector(".hero");
+    if (!topbar || !hero) return;
+
+    window.addEventListener("scroll", function () {
+      var heroBottom = hero.getBoundingClientRect().bottom;
+      if (heroBottom <= 60) {
+        topbar.classList.add("scrolled");
+      } else {
+        topbar.classList.remove("scrolled");
+      }
+    }, { passive: true });
+  })();
+
   function isMobile() {
     return window.innerWidth <= 760;
   }
