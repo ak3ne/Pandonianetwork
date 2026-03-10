@@ -1558,15 +1558,15 @@ select {
     font-size: 0.82rem;
   }
 
-  /* Globe fills hero from the very top, touching the menu */
+  /* Globe centered in hero, sized to fill regardless of screen aspect ratio */
   .hero-globe-wrap {
     position: absolute;
-    top: -15vw;
+    top: 50%;
     bottom: auto;
     left: 50%;
-    transform: translateX(-50%);
-    width: 180vw;
-    height: 180vw;
+    transform: translate(-50%, -50%);
+    width: max(180vw, 130vh);
+    height: max(180vw, 130vh);
     min-width: 0;
     min-height: 0;
     max-width: none;
@@ -1861,9 +1861,8 @@ select {
   }
 
   .hero-globe-wrap {
-    top: -20vw;
-    width: 200vw;
-    height: 200vw;
+    width: max(200vw, 140vh);
+    height: max(200vw, 140vh);
   }
 
   .panel {
