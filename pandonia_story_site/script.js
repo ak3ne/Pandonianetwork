@@ -704,7 +704,7 @@
       font: { family: "Space Grotesk, sans-serif", color: "#342a23" },
     };
 
-    Plotly.react("incident-chart", traces, layout, { responsive: true, displaylogo: false });
+    Plotly.react("incident-chart", traces, mobileLayout(layout), { responsive: true, displaylogo: false });
   }
 
   function distributionPlot() {
@@ -738,7 +738,7 @@
     Plotly.newPlot(
       "distribution-chart",
       traces,
-      {
+      mobileLayout({
         title: "Raw vs Trimmed Daily L2 NO2 Distribution (Common Window)",
         paper_bgcolor: "rgba(0,0,0,0)",
         plot_bgcolor: "rgba(0,0,0,0)",
@@ -748,7 +748,7 @@
         boxmode: "group",
         font: { family: "Space Grotesk, sans-serif", color: "#342a23" },
         legend: { orientation: "h", y: 1.12 },
-      },
+      }),
       { responsive: true, displaylogo: false }
     );
   }
@@ -859,7 +859,7 @@
       },
     };
 
-    Plotly.newPlot(host, [trace], layout, {
+    Plotly.newPlot(host, [trace], mobileLayout(layout), {
       responsive: true,
       displaylogo: false,
     });
@@ -1103,14 +1103,14 @@
           },
         },
       ],
-      {
+      mobileLayout({
         title: "Trimmed Mean Daily L2 NO2 (Common Window)",
         paper_bgcolor: "rgba(0,0,0,0)",
         plot_bgcolor: "rgba(0,0,0,0)",
         margin: { t: 54, r: 20, b: 48, l: 58 },
         yaxis: { title: "L2 NO2 [DU]", gridcolor: "#ddd1c5" },
         font: { family: "Space Grotesk, sans-serif", color: "#342a23" },
-      },
+      }),
       { responsive: true, displaylogo: false }
     );
   }
@@ -1153,12 +1153,12 @@
           x,
           y,
           mode: "lines+markers",
-          line: { color: "#7a6a5c", width: 3 },
-          marker: { size: 7 },
+          line: { color: "#7a6a5c", width: isMobile() ? 2 : 3 },
+          marker: { size: isMobile() ? 5 : 7 },
           name: site,
         },
       ],
-      {
+      mobileLayout({
         title,
         paper_bgcolor: "rgba(0,0,0,0)",
         plot_bgcolor: "rgba(0,0,0,0)",
@@ -1166,7 +1166,7 @@
         xaxis: { title: xtitle, gridcolor: "#ddd1c5" },
         yaxis: { title: "L2 NO2 [DU]", gridcolor: "#ddd1c5" },
         font: { family: "Space Grotesk, sans-serif", color: "#342a23" },
-      },
+      }),
       { responsive: true, displaylogo: false }
     );
   }
@@ -1293,7 +1293,8 @@
         globe.height(host.clientHeight);
         const renderer = globe.renderer();
         if (renderer && typeof renderer.setPixelRatio === "function") {
-          renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+          const mobile = window.innerWidth <= 760;
+          renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, mobile ? 1.5 : 2));
         }
       };
       resize();
@@ -1301,7 +1302,7 @@
 
       const controls = globe.controls();
       controls.autoRotate = true;
-      controls.autoRotateSpeed = 0.22;
+      controls.autoRotateSpeed = window.innerWidth <= 760 ? 0.15 : 0.22;
       controls.enableDamping = true;
       controls.dampingFactor = 0.06;
       controls.minDistance = 230;
@@ -1335,6 +1336,51 @@
       hint.textContent = msg;
       if (heroSub) heroSub.textContent = msg;
     }
+  }
+
+  /* ── Mobile navigation toggle ── */
+  (function initMobileNav() {
+    const toggle = document.getElementById("nav-toggle");
+    const nav = document.getElementById("main-nav");
+    if (!toggle || !nav) return;
+
+    toggle.addEventListener("click", () => {
+      const open = nav.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", String(open));
+    });
+
+    nav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        nav.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && nav.classList.contains("open")) {
+        nav.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+      }
+    });
+  })();
+
+  function isMobile() {
+    return window.innerWidth <= 760;
+  }
+
+  function mobileLayout(base) {
+    if (!isMobile()) return base;
+    return Object.assign({}, base, {
+      margin: Object.assign({}, base.margin || {}, {
+        l: Math.min(base.margin?.l || 50, 40),
+        r: Math.min(base.margin?.r || 20, 12),
+        t: Math.min(base.margin?.t || 40, 30),
+        b: Math.min(base.margin?.b || 40, 36),
+      }),
+      font: Object.assign({}, base.font || {}, {
+        size: Math.min(base.font?.size || 12, 10),
+      }),
+    });
   }
 
   function init() {
