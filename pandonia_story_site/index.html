@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pandonia Story Lab | Level-2 Air Quality Narrative</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,700&family=Cormorant+Garamond:wght@500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="https://unpkg.com/three@0.161.0/build/three.min.js"></script>
+  <script src="https://unpkg.com/globe.gl"></script>
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">PN</div>
+    <nav>
+      <a href="#story">Story</a>
+      <a href="#network">Data</a>
+      <a href="#instrument">Instrument</a>
+      <a href="#analysis">Interpret</a>
+      <a href="#explorer">Explorer</a>
+    </nav>
+    <a class="cta" href="#incident">L2 Analysis</a>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="hero-overlay"></div>
+    <div class="hero-copy">
+      <p class="eyebrow">Ground Remote Sensing Narrative</p>
+      <h1 class="hero-title">
+        <span class="hero-wordmark">PANDONIA</span><br />
+        READING<br />
+        THE AIR<br />
+        <em>FROM GROUND TO ORBIT</em>
+      </h1>
+      <p class="hero-sub">
+        Pandonia is the global network built around NASA's Pandora spectrometers. This site follows the
+        network through its origin, history, operating logic, Level-2 data products, and a six-site NO2 comparison
+        used as an air-pollution indicator.
+      </p>
+      <div class="hero-stats" id="hero-stats"></div>
+    </div>
+    <div class="hero-globe-wrap">
+      <div id="hero-globe"></div>
+      <div id="globe-hint">Loading Pandonia site network...</div>
+    </div>
+  </section>
+
+  <main>
+    <section class="panel" id="story">
+      <div class="panel-head">
+        <p class="eyebrow">Introduction</p>
+        <h2>What Pandonia Is</h2>
+      </div>
+      <div class="grid two story-grid">
+        <article class="card narrative story-lead">
+          <p class="kicker">Start with the network and the measurement logic.</p>
+          <p>
+            <em>Pandonia</em>, more formally the <em>Pandonia Global Network (PGN)</em>, is a standardized
+            international network of ground-based Pandora spectrometers. Its job is to measure
+            <em>atmospheric trace gases</em> from the ground in a way that can be compared across sites, years,
+            and <em>satellite missions</em>.
+          </p>
+          <p>
+            One of <em>PGN's</em> main roles is <em>satellite validation</em> and verification. Official NASA
+            Pandora and PGN material describes the network as support infrastructure for more than a dozen
+            <em>UV-visible</em> air-quality sensors in <em>low Earth orbit</em> and <em>geostationary orbit</em>,
+            with especially important support for <em>Sentinel-5P</em>, <em>TEMPO</em>, <em>GEMS</em>, and
+            <em>Sentinel-4</em>.
+          </p>
+          <div class="mission-callout">
+            In practical terms, Pandonia helps answer a specific question: when a satellite maps <em>NO2</em>,
+            <em>ozone</em>, <em>formaldehyde</em>, or related atmospheric-composition fields from space, does
+            the retrieval agree with a trusted, standardized ground reference at the same place and time?
+          </div>
+          <div class="editorial-callout">
+            <em>PGN</em> is ground-truth infrastructure: standardized instruments, common processing, shared
+            <em>QA/QC</em>, and openly distributed atmospheric-composition data tied to real sites on Earth.
+          </div>
+          <div class="overview-map-block">
+            <div class="overview-map-head">
+              <h3>Global PGN Footprint</h3>
+              <p>Flat view of official Pandonia sites and current station status.</p>
+            </div>
+            <div id="story-network-map" class="story-network-map"></div>
+            <div class="story-map-legend" id="story-map-legend"></div>
+          </div>
+        </article>
+        <article class="card">
+          <h3>Core Concepts and Mission Terms</h3>
+          <div id="story-cards" class="stack-grid"></div>
+          <div class="term-note">
+            <h4>Satellite terminology</h4>
+            <ul class="simple-list">
+              <li><strong>GEMS</strong>: Geostationary Environment Monitoring Spectrometer, the geostationary air-quality sensor covering Asia.</li>
+              <li><strong>TEMPO</strong>: Tropospheric Emissions: Monitoring of Pollution, NASA's geostationary air-quality mission over North America.</li>
+              <li><strong>Sentinel-4</strong>: Europe's geostationary Copernicus air-quality mission, providing frequent daytime observations over Europe.</li>
+              <li><strong>Sentinel-5P</strong>: Sentinel-5 Precursor, a polar-orbiting mission used widely for atmospheric composition and air-quality products.</li>
+              <li><strong>GEO</strong>: Geostationary orbit, where a sensor watches the same region continuously.</li>
+              <li><strong>LEO</strong>: Low Earth orbit, where a sensor revisits locations as it circles the planet.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+      <div id="origin-timeline" class="timeline"></div>
+    </section>
+
+    <section class="panel alt" id="instrument">
+      <div class="panel-head">
+        <p class="eyebrow">The Machine</p>
+        <h2>What a Pandora Looks Like and How It Operates</h2>
+      </div>
+      <div class="grid two instrument-grid">
+        <article class="card media-card">
+          <h3>Instrument Motion</h3>
+          <div class="instrument-media">
+            <figure class="media-shot video-shot">
+              <div class="inline-video-shell" data-inline-video>
+                <video
+                  src="./assets/pandonia-motion.mp4"
+                  poster="./assets/pandonia-motion-poster.jpg"
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                ></video>
+                <button class="inline-video-trigger" type="button" aria-label="Play Pandora motion clip">
+                  <span class="play-icon" aria-hidden="true"></span>
+                  <span class="trigger-label">Play motion clip</span>
+                </button>
+              </div>
+              <figcaption>Tracker motion during operation. Click the frame to play or pause.</figcaption>
+            </figure>
+          </div>
+        </article>
+        <article class="card">
+          <h3>Hardware Anatomy</h3>
+          <div id="instrument-parts" class="stack-grid"></div>
+          <div class="ops-callout">
+            Operational software in the official manual is organized around three tools:
+            <strong>BlickO</strong> for acquisition, <strong>BlickF</strong> for file push and monitoring,
+            and <strong>BlickP</strong> for processing.
+          </div>
+        </article>
+      </div>
+      <div id="ops-grid" class="grid three"></div>
+    </section>
+
+    <section class="panel" id="analysis">
+      <div class="panel-head">
+        <p class="eyebrow">How To Read The Data</p>
+        <h2>How To Interpret Pandonia Data</h2>
+      </div>
+      <div class="grid three">
+        <article class="card">
+          <h3>File Levels</h3>
+          <div id="filetype-grid" class="stack-grid compact"></div>
+        </article>
+        <article class="card">
+          <h3>Data Quality Flags</h3>
+          <div id="dqf-grid" class="stack-grid compact"></div>
+        </article>
+        <article class="card">
+          <h3>L2 and Surface Air</h3>
+          <ol class="simple-list">
+            <li>L2 direct-sun NO2 here is a total-column product in Dobson Units.</li>
+            <li>It is useful as an air-pollution correlate, especially for combustion-related urban conditions.</li>
+            <li>It is not a direct PM2.5 measurement.</li>
+            <li>Column-to-surface interpretation stays uncertain because mixing height, transport, chemistry, and vertical structure all matter.</li>
+          </ol>
+        </article>
+      </div>
+      <div class="grid two">
+        <article class="card">
+          <h3>Recommended Analysis Workflow</h3>
+          <div id="analysis-steps" class="workflow"></div>
+        </article>
+        <article class="card">
+          <h3>Processing Chain</h3>
+          <div class="pipeline" id="pipeline"></div>
+          <div id="pipeline-text" class="pipeline-text"></div>
+          <div class="resource-strip" id="resource-links"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel" id="incident">
+      <div class="panel-head">
+        <p class="eyebrow">Data Analysis</p>
+        <h2>Level-2 NO2 Comparison Across Selected Sites</h2>
+      </div>
+      <div class="grid two">
+        <article class="card narrative">
+          <h3>What This Comparison Is Showing</h3>
+          <p>
+            All charts in this section use old-tree Level-2 direct-sun NO2 files from the
+            <code>rnvs3p1-8</code> product family. The quantity plotted is a retrieved atmospheric NO2 column,
+            not a surface PM2.5 observation.
+          </p>
+          <div class="qa-note">
+            <strong>Core concept:</strong>
+            L1 is the calibrated and corrected measurement stage. L2 is the retrieved geophysical
+            product with uncertainty and quality flags. For interpretation on this website, L2 is the
+            decisive product layer.
+          </div>
+          <p>
+            That makes L2 NO2 useful as a proxy for broader air-pollution conditions, but only with
+            caution. A high column does not translate directly into high surface PM2.5 because boundary-layer
+            height, vertical profile, transport, humidity, and chemistry can separate the column burden
+            from what people breathe at the surface.
+          </p>
+          <div class="controls">
+            <label>
+              Focus Site
+              <select id="incident-site"></select>
+            </label>
+            <label>
+              View Mode
+              <select id="incident-mode">
+                <option value="raw">Raw Daily Means (Common Window)</option>
+                <option value="trimmed">Trimmed at Site p99 (Robust View)</option>
+                <option value="compare">Raw vs Trimmed Monthly Means</option>
+              </select>
+            </label>
+          </div>
+          <div id="incident-summary" class="mini-metrics"></div>
+        </article>
+        <article class="card chart-card">
+          <div id="incident-chart" class="chart"></div>
+        </article>
+      </div>
+      <div class="grid two">
+        <article class="card chart-card">
+          <h3>Cross-Site Daily Distribution</h3>
+          <p class="subtle">Common-window comparison shows how site-to-site L2 NO2 behaves before any surface-air interpretation is attempted.</p>
+          <div id="distribution-chart" class="chart"></div>
+        </article>
+        <article class="card">
+          <h3>How to Read This Correctly</h3>
+          <ol class="simple-list">
+            <li>Start with common-window comparisons, not unmatched full-period averages.</li>
+            <li>Inspect the daily distribution before interpreting any mean value.</li>
+            <li>Use retrieval-level QA from L2, not only instrument-stage checks from L1.</li>
+            <li>Treat NO2 columns as a pollution correlate, not a direct PM2.5 reading.</li>
+          </ol>
+          <div id="outlier-table"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel alt" id="network">
+      <div class="panel-head">
+        <p class="eyebrow">Why The Data Matters</p>
+        <h2>Why PGN Exists and What It Can Measure</h2>
+      </div>
+      <div class="grid two">
+        <article class="card narrative network-story">
+          <h3>Why The Network Exists</h3>
+          <p>
+            <em>PGN</em> exists because trace gases such as <em>NO2</em> change fast in space and time, while
+            <em>satellite validation</em> requires repeatable ground observations from many well-characterized sites.
+          </p>
+          <p>
+            The network solves that by standardizing instruments, processing, and <em>quality control</em> so one
+            station is not an isolated measurement but part of a comparable global system.
+          </p>
+          <div class="pgn-scene-container" aria-label="Interactive comparison between satellite averages and ground reference measurements">
+            <div class="pgn-city-canvas" id="pgnVisualCanvas">
+              <div class="pgn-city-grid" id="pgnCityGrid"></div>
+              <div class="pgn-sat-overlay" id="pgnSatOverlay">
+                <div class="pgn-single-color" id="pgnSingleColor"></div>
+              </div>
+              <div class="pgn-ground-pin" id="pgnGroundPin">
+                <div class="pgn-pin-ring"><div class="pgn-pin-dot"></div></div>
+              </div>
+            </div>
+            <div class="pgn-slider-area">
+              <div class="pgn-slider-labels">
+                <span class="pgn-slider-label pgn-sat-label" id="pgnSatLabel"><span class="dot"></span>Satellite view</span>
+                <span class="pgn-slider-label pgn-ground-label" id="pgnGroundLabel"><span class="dot"></span>Reality</span>
+              </div>
+              <input type="range" id="pgnViewSlider" min="0" max="100" value="0" />
+              <div class="pgn-drag-hint">← Drag to reveal →</div>
+            </div>
+            <div class="pgn-caption-area">
+              <div class="pgn-caption" id="pgnCaption">
+                A satellite sees this entire area as <span class="highlight-sat">one single color</span> — one averaged number for the whole region.
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <h3>What Data It Can Obtain</h3>
+          <div id="product-grid" class="stack-grid compact"></div>
+        </article>
+      </div>
+      <div id="usecase-grid" class="grid three info-cards"></div>
+      <div class="grid two">
+        <article class="card map-card">
+          <h3>Selected PGN Sites in This Analysis</h3>
+          <div id="site-map" class="map"></div>
+          <div id="map-tooltip" class="map-tooltip"></div>
+        </article>
+        <article class="card chart-card">
+          <h3>Robust Mean L2 NO2 by Site</h3>
+          <div id="rank-chart" class="chart"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel" id="explorer">
+      <div class="panel-head">
+        <p class="eyebrow">Dataset Explorer</p>
+        <h2>Interactive L2 Behavior by Site and Timescale</h2>
+      </div>
+      <div class="card explorer-controls">
+        <label>
+          Site
+          <select id="explorer-site"></select>
+        </label>
+        <label>
+          Variable
+          <select id="explorer-metric">
+            <option value="monthly_full">Monthly Median L2 NO2 (Full Record)</option>
+            <option value="monthly_common">Monthly Median L2 NO2 (Common Window)</option>
+            <option value="diurnal">Mean Diurnal L2 NO2 (LST)</option>
+            <option value="seasonal">Seasonal L2 NO2 (Month of Year)</option>
+          </select>
+        </label>
+      </div>
+      <div class="card chart-card">
+        <div id="explorer-chart" class="chart tall"></div>
+      </div>
+    </section>
+
+    <section class="panel alt" id="sources">
+      <div class="panel-head">
+        <p class="eyebrow">Official References</p>
+        <h2>Where This Website Is Getting Its Story</h2>
+      </div>
+      <div id="source-links" class="source-grid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-brand">
+      <div class="footer-brand-row">
+        <a class="uni-logo kyushu-logo" href="https://www.kyushu-u.ac.jp/en/" target="_blank" rel="noreferrer">
+          <img
+            src="https://www.kyushu-u.ac.jp/img/header_common/logo_footer.png"
+            alt="Kyushu University logo"
+          />
+        </a>
+        <div class="brand-cross" aria-hidden="true">×</div>
+        <a class="uni-logo pknu-logo" href="https://www.pknu.ac.kr/eng/14" target="_blank" rel="noreferrer">
+          <img
+            src="./assets/pknu-logo.png"
+            alt="Pukyong National University logo"
+          />
+        </a>
+      </div>
+      <div class="footer-credit">
+        A <strong>Kyushu University × Pukyong National University</strong> exchange-program project prepared for the
+        <strong>Ground Remote Sensing Laboratory (Prof. Ukkyo Jeong)</strong>.
+      </div>
+    </div>
+
+    <div class="footer-legal">
+      <p>
+        This website is an independent academic communication project. It is not an official website of
+        <em>Kyushu University</em>, <em>Pukyong National University</em>, <em>NASA</em>, or the
+        <em>Pandonia Global Network</em>.
+      </p>
+      <p>
+        Data, site metadata, and documentation references are derived from official <a href="https://www.pandonia-global-network.org/home/" target="_blank" rel="noreferrer">Pandonia Global Network</a>,
+        <a href="https://data.hetzner.pandonia-global-network.org/" target="_blank" rel="noreferrer">PGN old data tree</a>,
+        <a href="https://datachecker.pandonia-global-network.org/" target="_blank" rel="noreferrer">PGN DataChecker</a>,
+        and <a href="https://pandora.gsfc.nasa.gov/" target="_blank" rel="noreferrer">NASA Pandora</a> materials.
+      </p>
+      <p>
+        All university names, logos, and third-party marks remain the property of their respective institutions.
+        They are displayed here for non-commercial academic attribution related to the exchange program and host laboratory.
+      </p>
+      <p>
+        The Level-2 <em>NO2</em> results shown on this site are column products used here as air-pollution correlates.
+        They are not direct <em>PM2.5</em> measurements and should not be treated as regulatory or operational compliance data.
+      </p>
+    </div>
+  </footer>
+
+  <script src="./data.js"></script>
+  <script src="./pandonia_sites.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

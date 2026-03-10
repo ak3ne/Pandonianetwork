@@ -1,0 +1,3314 @@
+window.PANDONIA_SITE_MAP = [
+  {
+    "panId": "2",
+    "name": "GreenbeltMD",
+    "lat": 38.9926,
+    "lon": -76.8396,
+    "alt": 90,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Thomas Hanisco"
+  },
+  {
+    "panId": "16",
+    "name": "GreenbeltMD",
+    "lat": 38.9926,
+    "lon": -76.8396,
+    "alt": 90,
+    "status": "out of operation",
+    "color": [
+      0.6,
+      0.5,
+      0.5
+    ],
+    "pgn": false,
+    "delayed": false,
+    "pi": "N/A"
+  },
+  {
+    "panId": "17",
+    "name": "LabGSFC",
+    "lat": 38.9926,
+    "lon": -76.8396,
+    "alt": 90,
+    "status": "out of operation",
+    "color": [
+      0.6,
+      0.5,
+      0.5
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Jae Hwan Kim"
+  },
+  {
+    "panId": "21",
+    "name": "Bremen",
+    "lat": 53.1037,
+    "lon": 8.84944,
+    "alt": 20,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Andre Seyler"
+  },
+  {
+    "panId": "23",
+    "name": "FourCornersNM",
+    "lat": 36.797,
+    "lon": -108.48,
+    "alt": 1639,
+    "status": "out of operation",
+    "color": [
+      0.6,
+      0.5,
+      0.5
+    ],
+    "pgn": false,
+    "delayed": false,
+    "pi": "N/A"
+  },
+  {
+    "panId": "25",
+    "name": "HoustonTX",
+    "lat": 29.72,
+    "lon": -95.34,
+    "alt": 19,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "James Flynn"
+  },
+  {
+    "panId": "26",
+    "name": "CambridgeMA",
+    "lat": 42.38,
+    "lon": -71.11,
+    "alt": 60,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Kelly Chance"
+  },
+  {
+    "panId": "27",
+    "name": "LabGSFC",
+    "lat": 38.9926,
+    "lon": -76.8396,
+    "alt": 90,
+    "status": "out of operation",
+    "color": [
+      0.6,
+      0.5,
+      0.5
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Jaemin Hong"
+  },
+  {
+    "panId": "30",
+    "name": "Juelich",
+    "lat": 50.908,
+    "lon": 6.413,
+    "alt": 94,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Kezia Lange"
+  },
+  {
+    "panId": "31",
+    "name": "CharlesCityVA",
+    "lat": 37.3259517,
+    "lon": -77.2057027,
+    "alt": 6,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Vickie Connors"
+  },
+  {
+    "panId": "32",
+    "name": "GreenbeltMD",
+    "lat": 38.9926,
+    "lon": -76.8396,
+    "alt": 90,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Thomas Hanisco"
+  },
+  {
+    "panId": "33",
+    "name": "NASAHQ",
+    "lat": 38.883135,
+    "lon": -77.01628,
+    "alt": 90,
+    "status": "out of operation",
+    "color": [
+      0.6,
+      0.5,
+      0.5
+    ],
+    "pgn": false,
+    "delayed": false,
+    "pi": "Thomas Hanisco"
+  },
+  {
+    "panId": "34",
+    "name": "MountainViewCA",
+    "lat": 37.42,
+    "lon": -122.0568,
+    "alt": 50,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "James Podolske"
+  },
+  {
+    "panId": "35",
+    "name": "ForestParkMO",
+    "lat": 38.6312,
+    "lon": -90.2811,
+    "alt": 163,
+    "status": "out of operation",
+    "color": [
+      0.6,
+      0.5,
+      0.5
+    ],
+    "pgn": false,
+    "delayed": false,
+    "pi": "Thomas Hanisco"
+  },
+  {
+    "panId": "36",
+    "name": "Dakar",
+    "lat": 14.68167,
+    "lon": -17.4675,
+    "alt": 40,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": false,
+    "delayed": false,
+    "pi": "N/A"
+  },
+  {
+    "panId": "37",
+    "name": "HamptonVA",
+    "lat": 37.1036,
+    "lon": -76.3868,
+    "alt": 4,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Dan Phoenix"
+  },
+  {
+    "panId": "38",
+    "name": "BayonneNJ",
+    "lat": 40.6703,
+    "lon": -74.1261,
+    "alt": 3,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Lukas Valin"
+  },
+  {
+    "panId": "39",
+    "name": "DearbornMI",
+    "lat": 42.306674,
+    "lon": -83.148754,
+    "alt": 181,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Lukas Valin"
+  },
+  {
+    "panId": "40",
+    "name": "WallopsIslandVA",
+    "lat": 37.8439,
+    "lon": -75.4775,
+    "alt": 11,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "John R. Moisan"
+  },
+  {
+    "panId": "46",
+    "name": "SaoTome",
+    "lat": 0.37806,
+    "lon": 6.71222,
+    "alt": 10,
+    "status": "out of operation",
+    "color": [
+      0.6,
+      0.5,
+      0.5
+    ],
+    "pgn": false,
+    "delayed": false,
+    "pi": "Thomas Hanisco"
+  },
+  {
+    "panId": "49",
+    "name": "HoustonTX",
+    "lat": 29.72,
+    "lon": -95.34,
+    "alt": 19,
+    "status": "out of operation",
+    "color": [
+      0.6,
+      0.5,
+      0.5
+    ],
+    "pgn": false,
+    "delayed": false,
+    "pi": "John R. Moisan"
+  },
+  {
+    "panId": "50",
+    "name": "SaoTome",
+    "lat": 0.37806,
+    "lon": 6.71222,
+    "alt": 10,
+    "status": "out of operation",
+    "color": [
+      0.6,
+      0.5,
+      0.5
+    ],
+    "pgn": false,
+    "delayed": false,
+    "pi": "Thomas Hanisco"
+  },
+  {
+    "panId": "51",
+    "name": "OldFieldNY",
+    "lat": 40.9635,
+    "lon": -73.1402,
+    "alt": 3,
+    "status": "operational with issue",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Lukas Valin"
+  },
+  {
+    "panId": "52",
+    "name": "RichmondCA",
+    "lat": 37.913,
+    "lon": -122.336,
+    "alt": 5,
+    "status": "operational with issue",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Ronald Cohen"
+  },
+  {
+    "panId": "53",
+    "name": "Potchefstroom-METSI",
+    "lat": -26.4907,
+    "lon": 27.1322,
+    "alt": 1440,
+    "status": "operational with issue",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Suart Piketh"
+  },
+  {
+    "panId": "55",
+    "name": "QueensNY",
+    "lat": 40.7361,
+    "lon": -73.8215,
+    "alt": 25,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Lukas Valin"
+  },
+  {
+    "panId": "56",
+    "name": "MaunaLoaHI",
+    "lat": 19.4795,
+    "lon": -155.6027,
+    "alt": 4169,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Thomas Hanisco"
+  },
+  {
+    "panId": "60",
+    "name": "Fajardo",
+    "lat": 18.3797,
+    "lon": -65.61839,
+    "alt": 66,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Olga Mayol-Bracero"
+  },
+  {
+    "panId": "61",
+    "name": "AldineTX",
+    "lat": 29.901134,
+    "lon": -95.326214,
+    "alt": 24,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "James Flynn"
+  },
+  {
+    "panId": "62",
+    "name": "Potchefstroom",
+    "lat": -26.5694,
+    "lon": 26.9392,
+    "alt": 1480,
+    "status": "out of operation",
+    "color": [
+      0.6,
+      0.5,
+      0.5
+    ],
+    "pgn": false,
+    "delayed": false,
+    "pi": "N/A"
+  },
+  {
+    "panId": "64",
+    "name": "NewHavenCT",
+    "lat": 41.3014,
+    "lon": -72.9029,
+    "alt": 4,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Lukas Valin"
+  },
+  {
+    "panId": "65",
+    "name": "Altzomoni",
+    "lat": 19.1187,
+    "lon": -98.6552,
+    "alt": 3985,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Michel Grutter de la Mora"
+  },
+  {
+    "panId": "66",
+    "name": "HuntsvilleAL",
+    "lat": 34.72519,
+    "lon": -86.646391,
+    "alt": 221,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Michael Newchurch"
+  },
+  {
+    "panId": "67",
+    "name": "Cologne",
+    "lat": 50.9389,
+    "lon": 6.9787,
+    "alt": 50,
+    "status": "out of operation",
+    "color": [
+      0.6,
+      0.5,
+      0.5
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Kezia Lange"
+  },
+  {
+    "panId": "68",
+    "name": "WrightwoodCA",
+    "lat": 34.3819,
+    "lon": -117.6813,
+    "alt": 2207,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Thierry Leblanc"
+  },
+  {
+    "panId": "69",
+    "name": "NewBrunswickNJ",
+    "lat": 40.4622,
+    "lon": -74.4294,
+    "alt": 19,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Lukas Valin"
+  },
+  {
+    "panId": "72",
+    "name": "SaltLakeCityUT-Hawthorne",
+    "lat": 40.7344,
+    "lon": -111.8722,
+    "alt": 1306,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Lukas Valin"
+  },
+  {
+    "panId": "74",
+    "name": "EdwardsCA",
+    "lat": 34.96,
+    "lon": -117.8811,
+    "alt": 692,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "James Podolske"
+  },
+  {
+    "panId": "75",
+    "name": "EssexMD",
+    "lat": 39.3109,
+    "lon": -76.4745,
+    "alt": 12,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Joel Dreessen"
+  },
+  {
+    "panId": "76",
+    "name": "Dhaka",
+    "lat": 23.7284,
+    "lon": 90.3982,
+    "alt": 34,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Abdus Salam"
+  },
+  {
+    "panId": "77",
+    "name": "Singapore-NUS",
+    "lat": 1.299,
+    "lon": 103.771,
+    "alt": 77,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Santo V. Salinas"
+  },
+  {
+    "panId": "78",
+    "name": "Banting",
+    "lat": 2.8167,
+    "lon": 101.6232,
+    "alt": 7,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Mohd Talib Latif"
+  },
+  {
+    "panId": "80",
+    "name": "BeltsvilleMD",
+    "lat": 39.0567,
+    "lon": -76.8758,
+    "alt": 70,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "John Sullivan"
+  },
+  {
+    "panId": "81",
+    "name": "StocktonIL",
+    "lat": 42.2872,
+    "lon": -90.0,
+    "alt": 281,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Kevin Mishoe"
+  },
+  {
+    "panId": "82",
+    "name": "SanJose-UCR",
+    "lat": 9.9396,
+    "lon": -84.0422,
+    "alt": 1226,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Jorge Andres Diaz"
+  },
+  {
+    "panId": "83",
+    "name": "BondvilleIL",
+    "lat": 40.051983,
+    "lon": -88.3725,
+    "alt": 213,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Kevin Mishoe"
+  },
+  {
+    "panId": "85",
+    "name": "NewOrleansLA-XULA",
+    "lat": 29.9643,
+    "lon": -90.1074,
+    "alt": 10,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Morewell Gasseller"
+  },
+  {
+    "panId": "86",
+    "name": "SantaCruz",
+    "lat": -17.7601,
+    "lon": -63.1996,
+    "alt": 416,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Marcos Andrade"
+  },
+  {
+    "panId": "87",
+    "name": "LapwaiID",
+    "lat": 46.380559,
+    "lon": -116.806432,
+    "alt": 564,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Julie Simpson"
+  },
+  {
+    "panId": "88",
+    "name": "SanAntonioTX",
+    "lat": 29.423,
+    "lon": -98.5025,
+    "alt": 222,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Alberto Mestas-Nunez"
+  },
+  {
+    "panId": "89",
+    "name": "PaloDuroTX",
+    "lat": 34.88061,
+    "lon": -101.664703,
+    "alt": 1056,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Kevin Mishoe"
+  },
+  {
+    "panId": "91",
+    "name": "Kigali",
+    "lat": -1.936286,
+    "lon": 30.0779,
+    "alt": 1495,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Tabor Tekeste"
+  },
+  {
+    "panId": "92",
+    "name": "AtlantaGA-Downtown",
+    "lat": 33.7524,
+    "lon": -84.3855,
+    "alt": 359,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Guanyu Huang"
+  },
+  {
+    "panId": "94",
+    "name": "GuatemalaCity",
+    "lat": 14.6192,
+    "lon": -90.4838,
+    "alt": 1547,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Daniel Alvarez"
+  },
+  {
+    "panId": "100",
+    "name": "PhoenixAZ",
+    "lat": 33.458,
+    "lon": -112.0466,
+    "alt": 339,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Lukas Valin"
+  },
+  {
+    "panId": "101",
+    "name": "Izana",
+    "lat": 28.309,
+    "lon": -16.4994,
+    "alt": 2360,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Alberto Redondas"
+  },
+  {
+    "panId": "102",
+    "name": "Fang",
+    "lat": 18.792214,
+    "lon": 99.151919,
+    "alt": 500,
+    "status": "out of operation",
+    "color": [
+      0.6,
+      0.5,
+      0.5
+    ],
+    "pgn": false,
+    "delayed": false,
+    "pi": "N/A"
+  },
+  {
+    "panId": "103",
+    "name": "Downsview",
+    "lat": 43.781,
+    "lon": -79.468,
+    "alt": 187,
+    "status": "out of operation",
+    "color": [
+      0.6,
+      0.5,
+      0.5
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Vitali Fioletov"
+  },
+  {
+    "panId": "104",
+    "name": "Downsview",
+    "lat": 43.781,
+    "lon": -79.468,
+    "alt": 187,
+    "status": "out of operation",
+    "color": [
+      0.6,
+      0.5,
+      0.5
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Vitali Fioletov"
+  },
+  {
+    "panId": "105",
+    "name": "Helsinki",
+    "lat": 60.2037,
+    "lon": 24.9612,
+    "alt": 97,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Iolanda Ialongo"
+  },
+  {
+    "panId": "106",
+    "name": "Innsbruck",
+    "lat": 47.2643,
+    "lon": 11.3852,
+    "alt": 616,
+    "status": "operational with issue",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Martin Tiefengraber"
+  },
+  {
+    "panId": "107",
+    "name": "LynnMA",
+    "lat": 42.474642,
+    "lon": -70.970816,
+    "alt": 52,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Gonzalo Gonzalez Abad"
+  },
+  {
+    "panId": "108",
+    "name": "Toronto-West",
+    "lat": 43.7094,
+    "lon": -79.5435,
+    "alt": 141,
+    "status": "out of operation",
+    "color": [
+      0.6,
+      0.5,
+      0.5
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Vitali Fioletov"
+  },
+  {
+    "panId": "109",
+    "name": "Downsview",
+    "lat": 43.781,
+    "lon": -79.468,
+    "alt": 187,
+    "status": "out of operation",
+    "color": [
+      0.6,
+      0.5,
+      0.5
+    ],
+    "pgn": false,
+    "delayed": false,
+    "pi": "Vitali Fioletov"
+  },
+  {
+    "panId": "113",
+    "name": "Cordoba",
+    "lat": -31.675517,
+    "lon": -63.872964,
+    "alt": 332,
+    "status": "operational with issue",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Elian Wolfram"
+  },
+  {
+    "panId": "114",
+    "name": "BuenosAires",
+    "lat": -34.5554,
+    "lon": -58.5062,
+    "alt": 20,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Marcelo Raponi"
+  },
+  {
+    "panId": "115",
+    "name": "Rome-ISAC",
+    "lat": 41.840325,
+    "lon": 12.64747,
+    "alt": 117,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Stefano Casadio"
+  },
+  {
+    "panId": "117",
+    "name": "Rome-SAP",
+    "lat": 41.901695,
+    "lon": 12.515773,
+    "alt": 75,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Stefano Casadio"
+  },
+  {
+    "panId": "118",
+    "name": "Cabauw",
+    "lat": 51.9704,
+    "lon": 4.92625,
+    "alt": 0,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Ankie Piters"
+  },
+  {
+    "panId": "119",
+    "name": "Athens-NOA",
+    "lat": 37.9878,
+    "lon": 23.775,
+    "alt": 130,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Stelios Kazadzis"
+  },
+  {
+    "panId": "120",
+    "name": "Davos",
+    "lat": 46.812863,
+    "lon": 9.843702,
+    "alt": 1590,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Julian Groebner"
+  },
+  {
+    "panId": "121",
+    "name": "Izana",
+    "lat": 28.309,
+    "lon": -16.4994,
+    "alt": 2360,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Alberto Redondas"
+  },
+  {
+    "panId": "122",
+    "name": "Downsview",
+    "lat": 43.781,
+    "lon": -79.468,
+    "alt": 187,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Vitali Fioletov"
+  },
+  {
+    "panId": "123",
+    "name": "Mississauga-UTM",
+    "lat": 43.5461,
+    "lon": -79.6586,
+    "alt": 112,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": false,
+    "delayed": false,
+    "pi": "Vitali Fioletov"
+  },
+  {
+    "panId": "124",
+    "name": "ComodoroRivadavia",
+    "lat": -45.7833,
+    "lon": -67.45,
+    "alt": 46,
+    "status": "out of operation",
+    "color": [
+      0.6,
+      0.5,
+      0.5
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Marcelo Raponi"
+  },
+  {
+    "panId": "125",
+    "name": "BuenosAiresSMN",
+    "lat": -34.58944,
+    "lon": -58.48139,
+    "alt": 25,
+    "status": "out of operation",
+    "color": [
+      0.6,
+      0.5,
+      0.5
+    ],
+    "pgn": false,
+    "delayed": false,
+    "pi": "Marcelo Raponi"
+  },
+  {
+    "panId": "126",
+    "name": "Santarem-CarbonARA",
+    "lat": -2.68396,
+    "lon": -54.53503,
+    "alt": 75,
+    "status": "operational with issue",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": false,
+    "delayed": false,
+    "pi": "N/A"
+  },
+  {
+    "panId": "127",
+    "name": "Mainz-MPIC",
+    "lat": 49.991,
+    "lon": 8.228,
+    "alt": 125,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Thomas Wagner"
+  },
+  {
+    "panId": "128",
+    "name": "Darwin",
+    "lat": -12.45611,
+    "lon": 130.92656,
+    "alt": 37,
+    "status": "operational with issue",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": false,
+    "delayed": false,
+    "pi": "Nicholas Deutscher"
+  },
+  {
+    "panId": "129",
+    "name": "AliceSprings",
+    "lat": -23.758,
+    "lon": 133.8826,
+    "alt": 567,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Medhavy Thankappan"
+  },
+  {
+    "panId": "130",
+    "name": "Lindenberg",
+    "lat": 52.29,
+    "lon": 14.12,
+    "alt": 127,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Lionel Doppler"
+  },
+  {
+    "panId": "131",
+    "name": "Palau",
+    "lat": 7.342,
+    "lon": 134.4722,
+    "alt": 23,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Katrin Mueller"
+  },
+  {
+    "panId": "132",
+    "name": "Berlin",
+    "lat": 52.46,
+    "lon": 13.31,
+    "alt": 100,
+    "status": "operational with issue",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Thomas Ruthz"
+  },
+  {
+    "panId": "133",
+    "name": "Heidelberg",
+    "lat": 49.4173,
+    "lon": 8.6746,
+    "alt": 144,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "André Butz"
+  },
+  {
+    "panId": "134",
+    "name": "BristolPA",
+    "lat": 40.107434,
+    "lon": -74.882375,
+    "alt": 10,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Lukas Valin"
+  },
+  {
+    "panId": "135",
+    "name": "ManhattanNY-CCNY",
+    "lat": 40.815306,
+    "lon": -73.950478,
+    "alt": 34,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Maria Tzortziou"
+  },
+  {
+    "panId": "138",
+    "name": "Milan-MIBI",
+    "lat": 45.509,
+    "lon": 9.208,
+    "alt": 150,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Stefano Casadio"
+  },
+  {
+    "panId": "139",
+    "name": "SouthJordanUT",
+    "lat": 40.548,
+    "lon": -112.07,
+    "alt": 1582,
+    "status": "out of operation",
+    "color": [
+      0.6,
+      0.5,
+      0.5
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Jeffrey Geddes"
+  },
+  {
+    "panId": "140",
+    "name": "WashingtonDC",
+    "lat": 38.9217889,
+    "lon": -77.0123953,
+    "alt": 58,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Rama Seshu Tangirala"
+  },
+  {
+    "panId": "141",
+    "name": "Calakmul",
+    "lat": 18.5956,
+    "lon": -89.4137,
+    "alt": 275,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Michel Grutter de la Mora"
+  },
+  {
+    "panId": "142",
+    "name": "MexicoCity-UNAM",
+    "lat": 19.3262,
+    "lon": -99.1761,
+    "alt": 2280,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Michel Grutter de la Mora"
+  },
+  {
+    "panId": "143",
+    "name": "LibertyTX",
+    "lat": 30.096538,
+    "lon": -94.763471,
+    "alt": 3,
+    "status": "operational with issue",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Yuxuan Wang"
+  },
+  {
+    "panId": "144",
+    "name": "Downsview",
+    "lat": 43.781,
+    "lon": -79.468,
+    "alt": 187,
+    "status": "out of operation",
+    "color": [
+      0.6,
+      0.5,
+      0.5
+    ],
+    "pgn": false,
+    "delayed": false,
+    "pi": "Vitali Fioletov"
+  },
+  {
+    "panId": "145",
+    "name": "Toronto-Scarborough",
+    "lat": 43.7843,
+    "lon": -79.1874,
+    "alt": 137,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Vitali Fioletov"
+  },
+  {
+    "panId": "146",
+    "name": "Yokosuka",
+    "lat": 35.3207455,
+    "lon": 139.65082,
+    "alt": 5,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Yugo Kanaya"
+  },
+  {
+    "panId": "148",
+    "name": "GreenbeltMD",
+    "lat": 38.9926,
+    "lon": -76.8396,
+    "alt": 90,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": false,
+    "delayed": false,
+    "pi": "Elena Lind"
+  },
+  {
+    "panId": "149",
+    "name": "Seoul-SNU",
+    "lat": 37.458,
+    "lon": 126.951,
+    "alt": 116,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Sang Woo Kim"
+  },
+  {
+    "panId": "152",
+    "name": "NyAlesund",
+    "lat": 78.92328,
+    "lon": 11.92991,
+    "alt": 18,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Ann Mari Fjaeraa"
+  },
+  {
+    "panId": "153",
+    "name": "ChelseaMA",
+    "lat": 42.3946,
+    "lon": -71.0307,
+    "alt": 30,
+    "status": "out of operation",
+    "color": [
+      0.6,
+      0.5,
+      0.5
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Jeffrey Geddes"
+  },
+  {
+    "panId": "154",
+    "name": "SaltLakeCityUT",
+    "lat": 40.7663,
+    "lon": -111.8478,
+    "alt": 1455,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Jeffrey Geddes"
+  },
+  {
+    "panId": "155",
+    "name": "BostonMA",
+    "lat": 42.3497,
+    "lon": -71.104,
+    "alt": 40,
+    "status": "operational with issue",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Jeffrey Geddes"
+  },
+  {
+    "panId": "156",
+    "name": "HamptonVA-HU",
+    "lat": 37.0203,
+    "lon": -76.3366,
+    "alt": 19,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "John Anderson"
+  },
+  {
+    "panId": "158",
+    "name": "AtlantaGA-Conyers",
+    "lat": 33.5885,
+    "lon": -84.0697,
+    "alt": 215,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Jennifer Kaiser"
+  },
+  {
+    "panId": "159",
+    "name": "Wakkerstroom",
+    "lat": -27.349267,
+    "lon": 30.14376,
+    "alt": 1760,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Refilwe Kai"
+  },
+  {
+    "panId": "162",
+    "name": "Utsteinen",
+    "lat": -71.950321,
+    "lon": 23.346868,
+    "alt": 1397,
+    "status": "operational with issue",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Michel Van Roozendael"
+  },
+  {
+    "panId": "163",
+    "name": "Tsukuba-NIES-West",
+    "lat": 36.0506,
+    "lon": 140.1202,
+    "alt": 30,
+    "status": "operational with issue",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Jin-soo Park"
+  },
+  {
+    "panId": "164",
+    "name": "Seosan",
+    "lat": 36.7769,
+    "lon": 126.4938,
+    "alt": 25,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Jin-soo Park"
+  },
+  {
+    "panId": "165",
+    "name": "BuckeyeAZ",
+    "lat": 33.3699,
+    "lon": -112.6207,
+    "alt": 258,
+    "status": "operational with issue",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Lukas Valin"
+  },
+  {
+    "panId": "166",
+    "name": "PhiladelphiaPA",
+    "lat": 39.991889,
+    "lon": -75.081095,
+    "alt": 6,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Lukas Valin"
+  },
+  {
+    "panId": "167",
+    "name": "KenoshaWI",
+    "lat": 42.50472,
+    "lon": -87.8093,
+    "alt": 181,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Bradley Pierce"
+  },
+  {
+    "panId": "169",
+    "name": "Egbert",
+    "lat": 44.23,
+    "lon": -79.78,
+    "alt": 251,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Vitali Fioletov"
+  },
+  {
+    "panId": "170",
+    "name": "StGeorge",
+    "lat": 43.6605,
+    "lon": -79.3986,
+    "alt": 176,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Vitali Fioletov"
+  },
+  {
+    "panId": "171",
+    "name": "Beijing-RADI",
+    "lat": 40.0048,
+    "lon": 116.3786,
+    "alt": 59,
+    "status": "out of operation",
+    "color": [
+      0.6,
+      0.5,
+      0.5
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Kaitao Li"
+  },
+  {
+    "panId": "173",
+    "name": "AtlantaGA-GATech",
+    "lat": 33.7765,
+    "lon": -84.3982,
+    "alt": 293,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Jennifer Kaiser"
+  },
+  {
+    "panId": "174",
+    "name": "FairbanksAK",
+    "lat": 64.8594,
+    "lon": -147.8499,
+    "alt": 227,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Jingqui Mao"
+  },
+  {
+    "panId": "176",
+    "name": "Tsukuba-NIES",
+    "lat": 36.0513,
+    "lon": 140.12102,
+    "alt": 45,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Tamaki Fujinawa"
+  },
+  {
+    "panId": "177",
+    "name": "WestportCT",
+    "lat": 41.1183,
+    "lon": -73.3367,
+    "alt": 4,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Lukas Valin"
+  },
+  {
+    "panId": "178",
+    "name": "FountainHillsAZ",
+    "lat": 33.6109,
+    "lon": -111.7253,
+    "alt": 505,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": false,
+    "delayed": false,
+    "pi": "Lukas Valin"
+  },
+  {
+    "panId": "179",
+    "name": "CornwallCT",
+    "lat": 41.821342,
+    "lon": -73.297257,
+    "alt": 505,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Lukas Valin"
+  },
+  {
+    "panId": "181",
+    "name": "SanJoseCA",
+    "lat": 37.33251,
+    "lon": -121.88208,
+    "alt": 69,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Sen Chiao"
+  },
+  {
+    "panId": "182",
+    "name": "Tel-Aviv",
+    "lat": 32.1129,
+    "lon": 34.8062,
+    "alt": 76,
+    "status": "operational with issue",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Michal Segal-Rozenhaimer"
+  },
+  {
+    "panId": "183",
+    "name": "LondonderryNH",
+    "lat": 42.862531,
+    "lon": -71.38014,
+    "alt": 108,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Lukas Valin"
+  },
+  {
+    "panId": "184",
+    "name": "CapeElizabethME",
+    "lat": 43.561043,
+    "lon": -70.207324,
+    "alt": 24,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Lukas Valin"
+  },
+  {
+    "panId": "186",
+    "name": "MadisonCT",
+    "lat": 41.2568,
+    "lon": -72.5533,
+    "alt": 3,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Lukas Valin"
+  },
+  {
+    "panId": "187",
+    "name": "PittsburghPA",
+    "lat": 40.465465,
+    "lon": -79.960817,
+    "alt": 265,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Lukas Valin"
+  },
+  {
+    "panId": "188",
+    "name": "LapwaiID",
+    "lat": 46.380559,
+    "lon": -116.806432,
+    "alt": 564,
+    "status": "out of operation",
+    "color": [
+      0.6,
+      0.5,
+      0.5
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Elena Lind"
+  },
+  {
+    "panId": "189",
+    "name": "Incheon-ESC",
+    "lat": 37.568888,
+    "lon": 126.6375,
+    "alt": 22,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Hyunkee Hong"
+  },
+  {
+    "panId": "190",
+    "name": "Bangkok",
+    "lat": 13.78473,
+    "lon": 100.54,
+    "alt": 71,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Surassawadee Phoompanit"
+  },
+  {
+    "panId": "192",
+    "name": "Tokyo-Sophia",
+    "lat": 35.6831,
+    "lon": 139.7317,
+    "alt": 45,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Satoshi Inomata"
+  },
+  {
+    "panId": "193",
+    "name": "Tsukuba",
+    "lat": 36.0661,
+    "lon": 140.1244,
+    "alt": 51,
+    "status": "operational with issue",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Kei Shiomi"
+  },
+  {
+    "panId": "194",
+    "name": "Tokyo-TMU",
+    "lat": 35.62,
+    "lon": 139.3834,
+    "alt": 135,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Shungo Kato"
+  },
+  {
+    "panId": "195",
+    "name": "Sapporo",
+    "lat": 43.0727,
+    "lon": 141.3459,
+    "alt": 46,
+    "status": "out of operation",
+    "color": [
+      0.6,
+      0.5,
+      0.5
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Masatomo Fujiwara"
+  },
+  {
+    "panId": "198",
+    "name": "Kobe",
+    "lat": 34.719,
+    "lon": 135.29,
+    "alt": 23,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Kazuyo Yamaji"
+  },
+  {
+    "panId": "199",
+    "name": "Fukuoka",
+    "lat": 33.54912,
+    "lon": 130.36597,
+    "alt": 55,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Hisahiro Takashima"
+  },
+  {
+    "panId": "200",
+    "name": "GrandForksND",
+    "lat": 47.9219,
+    "lon": -97.0865,
+    "alt": 256,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Mafany Ndiva Mongoh"
+  },
+  {
+    "panId": "201",
+    "name": "Mokpo",
+    "lat": 34.9134,
+    "lon": 126.4372,
+    "alt": 27,
+    "status": "operational with issue",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": false,
+    "delayed": false,
+    "pi": "Min-suk Bae"
+  },
+  {
+    "panId": "204",
+    "name": "BoulderCO-NCAR",
+    "lat": 40.0375,
+    "lon": -105.242,
+    "alt": 1616,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Ivan Ortega"
+  },
+  {
+    "panId": "207",
+    "name": "ArlingtonTX",
+    "lat": 32.7315878,
+    "lon": -97.1141655,
+    "alt": 15,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Yang Li"
+  },
+  {
+    "panId": "208",
+    "name": "Windsor-West",
+    "lat": 42.2929,
+    "lon": -83.0731,
+    "alt": 180,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Vitali Fioletov"
+  },
+  {
+    "panId": "209",
+    "name": "Izana",
+    "lat": 28.309,
+    "lon": -16.4994,
+    "alt": 2360,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Alberto Redondas"
+  },
+  {
+    "panId": "212",
+    "name": "Pontianak",
+    "lat": 0.0415,
+    "lon": 109.3366,
+    "alt": 1,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "La Ode Muhammad Musafar Kilowasid"
+  },
+  {
+    "panId": "213",
+    "name": "ChiangMai",
+    "lat": 18.8063,
+    "lon": 98.986,
+    "alt": 60,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Surassawadee Phoompanit"
+  },
+  {
+    "panId": "214",
+    "name": "Songkhla",
+    "lat": 7.0059,
+    "lon": 100.4981,
+    "alt": 40,
+    "status": "out of operation",
+    "color": [
+      0.6,
+      0.5,
+      0.5
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Surassawadee Phoompanit"
+  },
+  {
+    "panId": "215",
+    "name": "PhnomPenh",
+    "lat": 11.5554,
+    "lon": 104.9389,
+    "alt": 25,
+    "status": "out of operation",
+    "color": [
+      0.6,
+      0.5,
+      0.5
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Chandath Him"
+  },
+  {
+    "panId": "216",
+    "name": "Ulaanbaatar",
+    "lat": 47.9188,
+    "lon": 106.848,
+    "alt": 1305,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Enkhbaatar Davaanyam"
+  },
+  {
+    "panId": "217",
+    "name": "Dalanzadgad",
+    "lat": 43.57725,
+    "lon": 104.4191,
+    "alt": 1466,
+    "status": "operational with issue",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Enkhbaatar Davaanyam"
+  },
+  {
+    "panId": "218",
+    "name": "Vientiane",
+    "lat": 17.9979,
+    "lon": 102.5821,
+    "alt": 169,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Virasith Phomsouvanh"
+  },
+  {
+    "panId": "219",
+    "name": "Ilocos",
+    "lat": 18.0582,
+    "lon": 120.5451,
+    "alt": 34,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Ellison Castro"
+  },
+  {
+    "panId": "220",
+    "name": "Sharkhad",
+    "lat": 47.93374,
+    "lon": 107.0104,
+    "alt": 1365,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": false,
+    "delayed": false,
+    "pi": "N/A"
+  },
+  {
+    "panId": "221",
+    "name": "Palawan",
+    "lat": 9.7915,
+    "lon": 118.734,
+    "alt": 56,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Ellison Castro"
+  },
+  {
+    "panId": "222",
+    "name": "DaNang",
+    "lat": 16.0005,
+    "lon": 108.2104,
+    "alt": 30,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Nhat Minh Nguyen"
+  },
+  {
+    "panId": "223",
+    "name": "HoChiMinhCity-SCEM",
+    "lat": 10.7825,
+    "lon": 106.6833,
+    "alt": 45,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Nhi Hoang Tuyet Nguyen"
+  },
+  {
+    "panId": "224",
+    "name": "QuezonCity",
+    "lat": 14.635,
+    "lon": 121.078,
+    "alt": 63,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Ellison Castro"
+  },
+  {
+    "panId": "225",
+    "name": "Cebu",
+    "lat": 10.3551,
+    "lon": 123.9111,
+    "alt": 67,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Ellison Castro"
+  },
+  {
+    "panId": "226",
+    "name": "HanoiCity-NCEM",
+    "lat": 21.0607,
+    "lon": 105.7495,
+    "alt": 22,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Anh Duy Tran"
+  },
+  {
+    "panId": "227",
+    "name": "NakhonPathom",
+    "lat": 13.82,
+    "lon": 100.04,
+    "alt": 72,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Darunee Promchot"
+  },
+  {
+    "panId": "228",
+    "name": "Pakse",
+    "lat": 15.123951,
+    "lon": 105.802459,
+    "alt": 107,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": false,
+    "delayed": false,
+    "pi": "N/A"
+  },
+  {
+    "panId": "229",
+    "name": "Daegu",
+    "lat": 35.8869,
+    "lon": 128.6061,
+    "alt": 44,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Sunyoung Park"
+  },
+  {
+    "panId": "232",
+    "name": "Yongin",
+    "lat": 37.338,
+    "lon": 127.265,
+    "alt": 122,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Yongjoo Choi"
+  },
+  {
+    "panId": "235",
+    "name": "Seoul-KU",
+    "lat": 37.5855,
+    "lon": 127.0257,
+    "alt": 90,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Junsu Gil"
+  },
+  {
+    "panId": "236",
+    "name": "NewLondonCT",
+    "lat": 41.3758,
+    "lon": -72.1004,
+    "alt": 30,
+    "status": "operational with issue",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Brooke Stutzman"
+  },
+  {
+    "panId": "237",
+    "name": "AtlantaGA-SouthDeKalbPerimeter",
+    "lat": 33.6892,
+    "lon": -84.2743,
+    "alt": 244,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Jennifer Kaiser"
+  },
+  {
+    "panId": "238",
+    "name": "Granada",
+    "lat": 37.164,
+    "lon": -3.605,
+    "alt": 680,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Inmaculada Foyo Moreno"
+  },
+  {
+    "panId": "239",
+    "name": "Kosetice",
+    "lat": 49.5733,
+    "lon": 15.0803,
+    "alt": 534,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Nadezda Zikova"
+  },
+  {
+    "panId": "240",
+    "name": "Thessaloniki",
+    "lat": 40.6336,
+    "lon": 22.9561,
+    "alt": 60,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Alkiviadis Bais"
+  },
+  {
+    "panId": "241",
+    "name": "Jeonju",
+    "lat": 35.8466,
+    "lon": 127.1307,
+    "alt": 40,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Mijung Song"
+  },
+  {
+    "panId": "242",
+    "name": "Trollhaugen",
+    "lat": -72.0112,
+    "lon": 2.535,
+    "alt": 1553,
+    "status": "operational with issue",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Ann Mari Fjaeraa"
+  },
+  {
+    "panId": "243",
+    "name": "Toronto-CNTower",
+    "lat": 43.6426,
+    "lon": -79.3871,
+    "alt": 330,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Xiaoyi Zhao"
+  },
+  {
+    "panId": "246",
+    "name": "IowaCityIA-WHS",
+    "lat": 41.6548,
+    "lon": -91.5827,
+    "alt": 235,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Charles Stanier"
+  },
+  {
+    "panId": "247",
+    "name": "WhittierCA",
+    "lat": 33.9768,
+    "lon": -118.0299,
+    "alt": 130,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Peter Peterson"
+  },
+  {
+    "panId": "248",
+    "name": "TurlockCA",
+    "lat": 37.523,
+    "lon": -120.855,
+    "alt": 45,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Wing To"
+  },
+  {
+    "panId": "249",
+    "name": "ChicagoIL",
+    "lat": 41.9748,
+    "lon": -87.712,
+    "alt": 200,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "John Randazzo"
+  },
+  {
+    "panId": "250",
+    "name": "Haldwani-ARIES",
+    "lat": 29.233,
+    "lon": 79.536,
+    "alt": 490,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Manish Naja"
+  },
+  {
+    "panId": "251",
+    "name": "Nainital-ARIES",
+    "lat": 29.3588,
+    "lon": 79.4583,
+    "alt": 1978,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Manish Naja"
+  },
+  {
+    "panId": "253",
+    "name": "TucsonAZ",
+    "lat": 32.233,
+    "lon": -110.953,
+    "alt": 779,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Armin Sorooshian"
+  },
+  {
+    "panId": "254",
+    "name": "TubaCityAZ",
+    "lat": 36.127,
+    "lon": -111.2212,
+    "alt": 1470,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Vaughn Salabye"
+  },
+  {
+    "panId": "255",
+    "name": "VirginiaBeachVA-CBBT",
+    "lat": 37.03665,
+    "lon": -76.0766,
+    "alt": 20,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "John Anderson"
+  },
+  {
+    "panId": "256",
+    "name": "MiamiFL-FIU",
+    "lat": 25.7569,
+    "lon": -80.3738,
+    "alt": 43,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Paulo Olivas"
+  },
+  {
+    "panId": "257",
+    "name": "AustinTX",
+    "lat": 30.2285,
+    "lon": -97.7544,
+    "alt": 205,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Paul Walter"
+  },
+  {
+    "panId": "258",
+    "name": "CorpusChristiTX",
+    "lat": 27.715,
+    "lon": -97.3287,
+    "alt": 14,
+    "status": "out of operation",
+    "color": [
+      0.6,
+      0.5,
+      0.5
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Joseph David Felix"
+  },
+  {
+    "panId": "259",
+    "name": "TylerTX",
+    "lat": 32.344,
+    "lon": -95.4159,
+    "alt": 164,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "James Flynn"
+  },
+  {
+    "panId": "260",
+    "name": "CameronLA",
+    "lat": 29.7881,
+    "lon": -93.1072,
+    "alt": 3,
+    "status": "out of operation",
+    "color": [
+      0.6,
+      0.5,
+      0.5
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Mark Phelps"
+  },
+  {
+    "panId": "261",
+    "name": "HoustonTX-SanJacinto",
+    "lat": 29.579,
+    "lon": -95.2045,
+    "alt": 10,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Madhu Gyawali"
+  },
+  {
+    "panId": "270",
+    "name": "Warsaw-UW",
+    "lat": 52.2113,
+    "lon": 20.9828,
+    "alt": 137,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Iwona Stachlewska"
+  },
+  {
+    "panId": "272",
+    "name": "Lauder",
+    "lat": -45.038,
+    "lon": 169.684,
+    "alt": 370,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Richard Querel"
+  },
+  {
+    "panId": "273",
+    "name": "Athens-IAASARS",
+    "lat": 38.05,
+    "lon": 23.8667,
+    "alt": 500,
+    "status": "out of operation",
+    "color": [
+      0.6,
+      0.5,
+      0.5
+    ],
+    "pgn": false,
+    "delayed": false,
+    "pi": "N/A"
+  },
+  {
+    "panId": "276",
+    "name": "Tokyo-Sophia",
+    "lat": 35.6831,
+    "lon": 139.7317,
+    "alt": 45,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": false,
+    "delayed": false,
+    "pi": "Satoshi Inomata"
+  },
+  {
+    "panId": "277",
+    "name": "Nagoya",
+    "lat": 35.15174,
+    "lon": 136.97214,
+    "alt": 117,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Urumu Tsunogai"
+  },
+  {
+    "panId": "278",
+    "name": "Tokyo-TMU",
+    "lat": 35.62,
+    "lon": 139.3834,
+    "alt": 135,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": false,
+    "delayed": false,
+    "pi": "N/A"
+  },
+  {
+    "panId": "279",
+    "name": "Sapporo",
+    "lat": 43.0727,
+    "lon": 141.3459,
+    "alt": 46,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Masatomo Fujiwara"
+  },
+  {
+    "panId": "280",
+    "name": "Eureka-0PAL",
+    "lat": 79.9903,
+    "lon": -85.9389,
+    "alt": 14,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Kimberly Strong"
+  },
+  {
+    "panId": "281",
+    "name": "CambridgeBay",
+    "lat": 69.1213,
+    "lon": -105.0398,
+    "alt": 5,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Kimberly Strong"
+  },
+  {
+    "panId": "282",
+    "name": "Ilo-UNAM",
+    "lat": -17.60198,
+    "lon": -71.33887,
+    "alt": 85,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Mario Roman Flores Roque"
+  },
+  {
+    "panId": "283",
+    "name": "LaPaz",
+    "lat": -16.5389,
+    "lon": -68.0661,
+    "alt": 3420,
+    "status": "operational with issue",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Marcos Andrade"
+  },
+  {
+    "panId": "284",
+    "name": "Downsview",
+    "lat": 43.781,
+    "lon": -79.468,
+    "alt": 187,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Vitali Fioletov"
+  },
+  {
+    "panId": "285",
+    "name": "AmesIA",
+    "lat": 42.045048,
+    "lon": -93.71524,
+    "alt": 390,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Thanos Papanicolaou"
+  },
+  {
+    "panId": "287",
+    "name": "FlorenceSC",
+    "lat": 34.24223,
+    "lon": -79.81243,
+    "alt": 41,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": false,
+    "delayed": false,
+    "pi": "N/A"
+  },
+  {
+    "panId": "288",
+    "name": "SanteeSiouxNE",
+    "lat": 42.7475,
+    "lon": -97.9282,
+    "alt": 380,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": false,
+    "delayed": false,
+    "pi": "N/A"
+  },
+  {
+    "panId": "289",
+    "name": "DeBilt",
+    "lat": 52.1012,
+    "lon": 5.1783,
+    "alt": 20,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Ankie Piters"
+  },
+  {
+    "panId": "290",
+    "name": "Skopje",
+    "lat": 42.0101,
+    "lon": 21.4278,
+    "alt": 260,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": false,
+    "delayed": false,
+    "pi": "N/A"
+  },
+  {
+    "panId": "291",
+    "name": "Ashgabat",
+    "lat": 37.88189,
+    "lon": 58.35832,
+    "alt": 365,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": false,
+    "delayed": false,
+    "pi": "N/A"
+  },
+  {
+    "panId": "293",
+    "name": "MandanND",
+    "lat": 46.7756,
+    "lon": -100.951,
+    "alt": 593,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": false,
+    "delayed": false,
+    "pi": "N/A"
+  },
+  {
+    "panId": "295",
+    "name": "TitoScaloPZ-CNR-IMAA",
+    "lat": 40.6012,
+    "lon": 15.7237,
+    "alt": 768,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": false,
+    "delayed": false,
+    "pi": "N/A"
+  },
+  {
+    "panId": "296",
+    "name": "Aosta-SC",
+    "lat": 45.7422,
+    "lon": 7.357,
+    "alt": 560,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Stefano Casadio"
+  },
+  {
+    "panId": "297",
+    "name": "Bologna-SPC",
+    "lat": 44.653,
+    "lon": 11.623,
+    "alt": 12,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": true,
+    "delayed": false,
+    "pi": "Stefano Casadio"
+  },
+  {
+    "panId": "999",
+    "name": "LabIBK",
+    "lat": 47.2643,
+    "lon": 11.3852,
+    "alt": 616,
+    "status": "hold due to issue",
+    "color": [
+      0.8,
+      0.7,
+      0.3
+    ],
+    "pgn": false,
+    "delayed": false,
+    "pi": "N/A"
+  },
+  {
+    "panId": "1000",
+    "name": "Innsbruck-HAF",
+    "lat": 47.315,
+    "lon": 11.386,
+    "alt": 2275,
+    "status": "operational",
+    "color": [
+      0.5,
+      0.8,
+      0.2
+    ],
+    "pgn": false,
+    "delayed": false,
+    "pi": "Martin Tiefengraber"
+  }
+];
